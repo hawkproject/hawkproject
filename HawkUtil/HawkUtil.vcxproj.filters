@@ -1,0 +1,660 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="math">
+      <UniqueIdentifier>{c2f1a4d1-7a20-4400-9b64-3ecac9ab2d27}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="file">
+      <UniqueIdentifier>{c7e7d929-5f97-46f7-b528-3d57eb68e809}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="memory">
+      <UniqueIdentifier>{6edeb1bc-8866-4ee3-b369-f19dbdaf93af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="security">
+      <UniqueIdentifier>{6ccd5960-63b8-4c93-b013-8f6a1d58d1a4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="string">
+      <UniqueIdentifier>{445ab87a-2536-44dd-9a9e-0ff750fb80ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="thread">
+      <UniqueIdentifier>{887ab640-45fc-446c-be1e-8f0262a7d055}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="objbase">
+      <UniqueIdentifier>{8a67c9cf-acef-4b9b-86f3-d5b76b6a3847}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="malloc">
+      <UniqueIdentifier>{7925de7b-9055-4a4f-80af-ae348da7c875}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="import">
+      <UniqueIdentifier>{b5d8db4c-7cc1-45fc-abf4-58d5b2a329e0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="import\sqlite">
+      <UniqueIdentifier>{0af551c1-2091-44b7-978e-ae3c65902ecf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="import\tinyxml">
+      <UniqueIdentifier>{85b670a0-4fdd-455b-b183-1af54d79c84b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algorithm">
+      <UniqueIdentifier>{f66ec3bd-2019-482e-8c44-4da09f6c5793}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="timer">
+      <UniqueIdentifier>{6bdf3cb5-b421-4d31-b0de-12152ca29a0a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="msg">
+      <UniqueIdentifier>{c11242c3-f913-483e-a487-5c41b62b048f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{c76ef9d1-1f40-40f0-85ad-e805cc3f57f2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="socket">
+      <UniqueIdentifier>{b77df09b-ca38-4ea0-a3f8-c60d9850705b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="import\json">
+      <UniqueIdentifier>{aa5a82ca-185d-4f5f-859e-66a606cc8cf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="exception">
+      <UniqueIdentifier>{a2610e47-8672-476b-be92-53cad61d097e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="os">
+      <UniqueIdentifier>{9dae74f2-68cd-4fb9-b2c7-91ee9cb3e8af}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="manager">
+      <UniqueIdentifier>{aae2519a-983e-45a0-967c-ba58f42f8827}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="refcount">
+      <UniqueIdentifier>{0ffff3bb-6856-42d0-8939-298c76da4510}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="callback">
+      <UniqueIdentifier>{cd482556-dd51-4321-886a-1aa37a548514}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="import\zlib">
+      <UniqueIdentifier>{794750e7-aaac-43c0-b24f-9087d5ad1675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="synch">
+      <UniqueIdentifier>{e6b81bcb-43cd-417e-a751-bb8aa46a68a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="db">
+      <UniqueIdentifier>{263fa634-e1e2-4c89-a289-a7199bc248e1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{3e95baf0-5f67-4827-a742-d57b8e83f4eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{191dfc1e-a539-4f0a-a0f0-56f80f1f9aa2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="zmq">
+      <UniqueIdentifier>{16a35944-41f3-404d-853d-ec3a5f689367}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="app">
+      <UniqueIdentifier>{849f7ea2-05d6-4476-92d3-bc396bcf4ebc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="script">
+      <UniqueIdentifier>{7b48a864-3068-4764-b625-7ecd96491dcd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="filedeliver">
+      <UniqueIdentifier>{d4035ef3-0b48-48c3-a48d-3dcad6d7f57b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="session">
+      <UniqueIdentifier>{d7b863fe-b506-4e57-aa66-a01ea19174ba}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HawkConfig.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkStdHeader.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkDatabase.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkDBManager.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkObjBase.h">
+      <Filter>objbase</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkObjManager.h">
+      <Filter>objbase</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkStringUtil.h">
+      <Filter>string</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkMath.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkRand.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkByteOrder.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkMarshal.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkMarshalData.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkOctets.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkOctetsStream.h">
+      <Filter>memory</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkCounter.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkDiskFile.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkFile.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkMemoryFile.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkXmlFile.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkLoggerManager.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkLogger.h">
+      <Filter>log</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkTask.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkThread.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkThreadPool.h">
+      <Filter>thread</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkBase64.h">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkMd5.h">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkRC4Security.h">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkSecurity.h">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkStreamCompress.h">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkUtil.h">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkMysql.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkSqlite.h">
+      <Filter>db</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkIPAddr.h">
+      <Filter>socket</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkRWEFds.h">
+      <Filter>socket</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkSocket.h">
+      <Filter>socket</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkSocketAddr.h">
+      <Filter>socket</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkSocketPair.h">
+      <Filter>socket</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkMalloc.h">
+      <Filter>malloc</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkDemutexTable.h">
+      <Filter>algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkHeapArray.h">
+      <Filter>algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkTimerManager.h">
+      <Filter>timer</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkMsg.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkMsgManager.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkXID.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkRingBuffer.h">
+      <Filter>algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkProtocolManager.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkProtocol.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkHMACSHA1Security.h">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkSHA1Security.h">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkXmlAttribute.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkXmlElement.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkXmlDocument.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkJson.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkAnyType.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkValueHolder.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkParamVector.h">
+      <Filter>msg</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkZlib.h">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkAllocator.h">
+      <Filter>malloc</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkManagerBase.h">
+      <Filter>manager</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkException.h">
+      <Filter>exception</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkOSOperator.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkAtomic.h">
+      <Filter>os</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkRefCounter.h">
+      <Filter>refcount</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkScope.h">
+      <Filter>refcount</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkSmartPtr.h">
+      <Filter>refcount</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkCallback.h">
+      <Filter>callback</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkMutex.h">
+      <Filter>synch</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkRWLock.h">
+      <Filter>synch</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkSignal.h">
+      <Filter>synch</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkSpinLock.h">
+      <Filter>synch</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkHash.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkSysProtocol.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkRange.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkSize.h">
+      <Filter>math</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkZmqManager.h">
+      <Filter>zmq</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkZmq.h">
+      <Filter>zmq</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkApp.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkAppObj.h">
+      <Filter>app</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkScriptState.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkScriptValue.h">
+      <Filter>script</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkPackage.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkFolder.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkZipReader.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkLockMap.h">
+      <Filter>algorithm</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkBinCfgFile.h">
+      <Filter>file</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkFileSender.h">
+      <Filter>filedeliver</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkFileAcceptor.h">
+      <Filter>filedeliver</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkSession.h">
+      <Filter>session</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkXorSecurity.h">
+      <Filter>security</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HawkDatabase.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkDBManager.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkObjBase.cpp">
+      <Filter>objbase</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkObjManager.cpp">
+      <Filter>objbase</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkStringUtil.cpp">
+      <Filter>string</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkMath.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkRand.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkMarshal.cpp">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkMarshalData.cpp">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkOctets.cpp">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkOctetsStream.cpp">
+      <Filter>memory</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkCounter.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkDiskFile.cpp">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkFile.cpp">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkMemoryFile.cpp">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkXmlFile.cpp">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkLogger.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkLoggerManager.cpp">
+      <Filter>log</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkTask.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkThread.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkThreadPool.cpp">
+      <Filter>thread</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkBase64.cpp">
+      <Filter>security</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkMd5.cpp">
+      <Filter>security</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkRC4Security.cpp">
+      <Filter>security</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkSecurity.cpp">
+      <Filter>security</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkStreamCompress.cpp">
+      <Filter>security</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkUtil.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkMysql.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkSqlite.cpp">
+      <Filter>db</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkIPAddr.cpp">
+      <Filter>socket</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkRWEFds.cpp">
+      <Filter>socket</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkSocket.cpp">
+      <Filter>socket</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkSocketAddr.cpp">
+      <Filter>socket</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkSocketPair.cpp">
+      <Filter>socket</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkMalloc.cpp">
+      <Filter>malloc</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkTimerManager.cpp">
+      <Filter>timer</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkMsg.cpp">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkMsgManager.cpp">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkProtocol.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkProtocolGen.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkProtocolManager.cpp">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkHMACSHA1Security.cpp">
+      <Filter>security</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkSHA1Security.cpp">
+      <Filter>security</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkJson.cpp">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkParamVector.cpp">
+      <Filter>msg</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkZlib.cpp">
+      <Filter>security</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkManagerBase.cpp">
+      <Filter>manager</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkException.cpp">
+      <Filter>exception</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkOSOperator.cpp">
+      <Filter>os</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkRefCounter.cpp">
+      <Filter>refcount</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkScope.cpp">
+      <Filter>refcount</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkMutex.cpp">
+      <Filter>synch</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkRWLock.cpp">
+      <Filter>synch</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkSignal.cpp">
+      <Filter>synch</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkSpinLock.cpp">
+      <Filter>synch</Filter>
+    </ClCompile>
+    <ClCompile Include="source\json\json_reader.cpp">
+      <Filter>import\json</Filter>
+    </ClCompile>
+    <ClCompile Include="source\json\json_value.cpp">
+      <Filter>import\json</Filter>
+    </ClCompile>
+    <ClCompile Include="source\json\json_writer.cpp">
+      <Filter>import\json</Filter>
+    </ClCompile>
+    <ClCompile Include="source\sqlite\sqlite3.c">
+      <Filter>import\sqlite</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tinyxml\tinystr.cpp">
+      <Filter>import\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tinyxml\tinyxml.cpp">
+      <Filter>import\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tinyxml\tinyxmlerror.cpp">
+      <Filter>import\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="source\tinyxml\tinyxmlparser.cpp">
+      <Filter>import\tinyxml</Filter>
+    </ClCompile>
+    <ClCompile Include="source\zlib\adler32.c">
+      <Filter>import\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="source\zlib\compress.c">
+      <Filter>import\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="source\zlib\crc32.c">
+      <Filter>import\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="source\zlib\deflate.c">
+      <Filter>import\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="source\zlib\infback.c">
+      <Filter>import\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="source\zlib\inffast.c">
+      <Filter>import\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="source\zlib\inflate.c">
+      <Filter>import\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="source\zlib\inftrees.c">
+      <Filter>import\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="source\zlib\trees.c">
+      <Filter>import\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="source\zlib\uncompr.c">
+      <Filter>import\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="source\zlib\zutil.c">
+      <Filter>import\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkHash.cpp">
+      <Filter>math</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkZmqManager.cpp">
+      <Filter>zmq</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkZmq.cpp">
+      <Filter>zmq</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkApp.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkAppObj.cpp">
+      <Filter>app</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkScriptState.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkScriptValue.cpp">
+      <Filter>script</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkPackage.cpp">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkFolder.cpp">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="source\zlib\ioapi.c">
+      <Filter>import\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="source\zlib\unzip.c">
+      <Filter>import\zlib</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkZipReader.cpp">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkBinCfgFile.cpp">
+      <Filter>file</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkFileSender.cpp">
+      <Filter>filedeliver</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkFileAcceptor.cpp">
+      <Filter>filedeliver</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkSession.cpp">
+      <Filter>session</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkXorSecurity.cpp">
+      <Filter>security</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+    <None Include="source\json\Makefile">
+      <Filter>import\json</Filter>
+    </None>
+    <None Include="source\sqlite\Makefile">
+      <Filter>import\sqlite</Filter>
+    </None>
+    <None Include="source\tinyxml\Makefile">
+      <Filter>import\tinyxml</Filter>
+    </None>
+    <None Include="source\zlib\Makefile">
+      <Filter>import\zlib</Filter>
+    </None>
+  </ItemGroup>
+</Project>
