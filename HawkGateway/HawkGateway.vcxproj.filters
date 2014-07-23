@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="gate">
+      <UniqueIdentifier>{3836779f-0fed-4961-81cb-cabef584e288}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server">
+      <UniqueIdentifier>{5a14a26c-dc25-4271-8221-c31da5c2a2b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proxy">
+      <UniqueIdentifier>{52cd140b-98a7-4093-8b61-493b62a421f9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="security">
+      <UniqueIdentifier>{9ae9e4f5-9380-47a2-8e98-e07ede10a876}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="controler">
+      <UniqueIdentifier>{1ed2580d-ae29-4074-bbb9-1ae897c96490}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HawkGateThread.cpp">
+      <Filter>gate</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkGateway.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkGateProxy.cpp">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkGateSecurity.cpp">
+      <Filter>security</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkCrossDomain.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkGwControler.cpp">
+      <Filter>controler</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HawkGateThread.h">
+      <Filter>gate</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkGateway.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkGateDef.h">
+      <Filter>gate</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkGateProxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkGateSecurity.h">
+      <Filter>security</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkGwControler.h">
+      <Filter>controler</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+  </ItemGroup>
+</Project>

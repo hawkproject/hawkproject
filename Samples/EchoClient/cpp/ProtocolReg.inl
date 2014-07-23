@@ -1,0 +1,7 @@
+REGISTER_PROTO(ErrNotify);
+REGISTER_PROTO(MsgNotify);
+REGISTER_PROTO(TimeSync);
+REGISTER_PROTO(LoginGame);
+REGISTER_PROTO(KickoutGame);
+REGISTER_PROTO(PlayerInit);
+REGISTER_PROTO(PlayerAssembly);

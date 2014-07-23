@@ -1,0 +1,17 @@
+REGISTER_PROTO(SysProtocol::Sys_Security);
+REGISTER_PROTO(SysProtocol::Sys_SelServer);
+REGISTER_PROTO(SysProtocol::Sys_SessionStart);
+REGISTER_PROTO(SysProtocol::Sys_RefuseConn);
+REGISTER_PROTO(SysProtocol::Sys_SessionBreak);
+REGISTER_PROTO(SysProtocol::Sys_CloseSession);
+REGISTER_PROTO(SysProtocol::Sys_ServerShutdown);
+REGISTER_PROTO(SysProtocol::Sys_CltPing);
+REGISTER_PROTO(SysProtocol::Sys_SvrPong);
+REGISTER_PROTO(SysProtocol::Sys_Octets);
+REGISTER_PROTO(SysProtocol::Sys_HeartBeat);
+REGISTER_PROTO(SysProtocol::Sys_HeartBreak);
+REGISTER_PROTO(SysProtocol::Sys_MsgNotify);
+REGISTER_PROTO(SysProtocol::Sys_ErrNotify);
+REGISTER_PROTO(SysProtocol::Sys_LogMsg);
+REGISTER_PROTO(SysProtocol::Sys_ProfReq);
+REGISTER_PROTO(SysProtocol::Sys_ProfInfo);

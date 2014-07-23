@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="proxy">
+      <UniqueIdentifier>{df449167-1e65-4ad4-9e57-e8265d22bc99}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="server">
+      <UniqueIdentifier>{341f4922-84f5-4fd3-811a-ab55e13bd033}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="log">
+      <UniqueIdentifier>{e7e74174-15b5-4da6-9eca-1f54d08f4b31}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="HawkLogProxy.cpp">
+      <Filter>proxy</Filter>
+    </ClCompile>
+    <ClCompile Include="HawkLogServer.cpp">
+      <Filter>server</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="HawkLogProxy.h">
+      <Filter>proxy</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkLogServer.h">
+      <Filter>server</Filter>
+    </ClInclude>
+    <ClInclude Include="HawkLog.h">
+      <Filter>log</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Makefile" />
+  </ItemGroup>
+</Project>

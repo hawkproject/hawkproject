@@ -1,0 +1,119 @@
+<ProtocolGen ProtocolIdFile = "HawkSysProtocolId" ProtocolRegFile = "HawkSysProtocolReg" Namespace = "SysProtocol" Package="org.hawk.protocol.system">
+	<!--系统错误定义-->
+	<GenFile Name = "HawkSysErrorCode">
+		<!--网关错误-->
+		<IdSpace Space = "GateErr" Desc = "网关错误">
+			<Id Macro = "ERR_REFUSE_CONN" Value = "1" Desc = "拒绝连接"/>
+			<Id Macro = "ERR_SERVICE_INVALID" Value = "2" Desc = "无可用服务"/>	
+			<Id Macro = "ERR_IP_BLACKLIST" Value = "3" Desc = "黑名单ip列表"/>
+			<Id Macro = "ERR_IP_PEERLIMIT" Value = "4" Desc = "ip连接数限制"/>	
+		</IdSpace>		
+	</GenFile>
+	
+	<!--系统协议定义-->
+	<GenFile Name = "HawkSysProtocol" Include = "HawkSysProtocolId">
+		<!--加密方式-->
+		<Protocol Name = "Sys_Security" Id = "1" Macro = "SYS_SECURITY" Desc = "加密方式">
+			<Var Name = "m_iSecurity" Type = "UInt32"/>
+			<Var Name = "m_sKey" Type = "HawkOctets"/>
+		</Protocol>
+		
+		<!--选服务器-->
+		<Protocol Name = "Sys_SelServer" Id = "2" Macro = "SYS_SEL_SERVER" Desc = "选服务器">
+			<Var Name = "m_iSvrId" Type = "UInt32"/>			
+		</Protocol>
+		
+		<!--会话开始-->
+		<Protocol Name = "Sys_SessionStart" Id = "3" Macro = "SYS_SESSION_START" Desc = "会话开始">
+			<Var Name = "m_iSid" Type = "UInt32"/>
+			<Var Name = "m_sAddr" Type = "AString"/>
+		</Protocol>
+		
+		<!--拒绝连接-->
+		<Protocol Name = "Sys_RefuseConn" Id = "4" Macro = "SYS_REFUSE_CONN" Desc = "拒绝连接">
+			<Var Name = "m_iErrCode" Type = "Int32"/>
+		</Protocol>
+		
+		<!--会话断开-->
+		<Protocol Name = "Sys_SessionBreak" Id = "5" Macro = "SYS_SESSION_BREAK" Desc = "会话主动断开">
+			<Var Name = "m_iSid" Type = "UInt32"/>
+			<Var Name = "m_sAddr" Type = "AString"/>
+		</Protocol>
+		
+		<!--会话关闭-->
+		<Protocol Name = "Sys_CloseSession" Id = "6" Macro = "SYS_CLOSE_SESSION" Desc = "会话被动关闭">
+			<Var Name = "m_iSid" Type = "UInt32"/>
+		</Protocol>
+		
+		<!--服务器关闭-->
+		<Protocol Name = "Sys_ServerShutdown" Id = "7" Macro = "SYS_SERVER_SHUTDOWN" Desc = "服务器关闭">
+			<Var Name = "m_iSvrId" Type = "UInt32"/>
+			<Var Name = "m_iTime" Type = "UInt32"/>
+		</Protocol>
+		
+		<!--Ping操作-->
+		<Protocol Name = "Sys_CltPing" Id = "8" Macro = "SYS_CLT_PING" Desc = "Ping操作">
+			<Var Name = "m_iCltData" Type = "UInt32"/>
+		</Protocol>
+		
+		<!--Pong操作-->
+		<Protocol Name = "Sys_SvrPong" Id = "9" Macro = "SYS_SVR_PONG" Desc = "Pong操作">
+			<Var Name = "m_iTime" Type = "UInt32"/>
+		</Protocol>
+		
+		<!--字节数组-->
+		<Protocol Name = "Sys_Octets" Id = "10" Macro = "SYS_OCTETS" Desc = "字节数组">
+			<Var Name = "m_sOctets" Type = "HawkOctets"/>
+		</Protocol>
+		
+		<!--会话心跳-->
+		<Protocol Name = "Sys_HeartBeat" Id = "11" Macro = "SYS_HEART_BEAT" Desc = "会话心跳">
+			<Var Name = "m_iTime" Type = "UInt32"/>
+		</Protocol>
+		
+		<!--心跳超时-->
+		<Protocol Name = "Sys_HeartBreak" Id = "12" Macro = "SYS_HEART_BREAK" Desc = "心跳超时">
+			<Var Name = "m_iTime" Type = "UInt32"/>
+		</Protocol>
+		
+		<!--消息通知-->
+		<Protocol Name = "Sys_MsgNotify" Id = "13" Macro = "SYS_MSG_NOTIFY" Desc = "消息通知">
+			<Var Name = "m_iMsgId" Type = "UInt32"/>
+			<Var Name = "m_iMode" Type = "UInt32"/>
+		</Protocol>
+		
+		<!--错误通知-->
+		<Protocol Name = "Sys_ErrNotify" Id = "14" Macro = "SYS_ERR_NOTIFY" Desc = "错误通知">
+			<Var Name = "m_iMsgId" Type = "UInt32"/>
+			<Var Name = "m_iMode" Type = "UInt32"/>
+		</Protocol>
+		
+		<!--日志消息-->
+		<Protocol Name = "Sys_LogMsg" Id = "15" Macro = "SYS_LOG_MSG" Desc = "日志消息">      
+			<Var Name = "m_iSvrId" Type = "Int32"/>
+			<Var Name = "m_iUsrId" Type = "UInt32"/>
+			<Var Name = "m_sUsrName" Type = "UString"/>
+			<Var Name = "m_iType" Type = "Int32"/>
+			<Var Name = "m_sKey" Type = "UString"/>
+			<Var Name = "m_sMsg" Type = "UString"/>
+		</Protocol>
+		
+		<!--性能请求-->
+		<Protocol Name = "Sys_ProfReq" Id = "16" Macro = "SYS_PROF_REQ" Desc = "性能请求">
+		</Protocol>
+		
+		<!--性能信息-->
+		<Protocol Name = "Sys_ProfInfo" Id = "17" Macro = "SYS_PROF_INFO" Desc = "性能信息">
+			<Var Name = "m_iTimeStamp" Type = "UInt32"/>
+			<Var Name = "m_iCpuCount" Type = "UInt32"/>
+			<Var Name = "m_iTotalMem" Type = "UInt64"/>
+			<Var Name = "m_iCpuUsage" Type = "UInt32"/>
+			<Var Name = "m_iMemUsage" Type = "UInt64"/>
+			<Var Name = "m_iConnect" Type = "UInt32"/>
+			<Var Name = "m_iRecvProto" Type = "UInt64"/>
+			<Var Name = "m_iRecvSize" Type = "UInt64"/>
+			<Var Name = "m_iSendProto" Type = "UInt64"/>
+			<Var Name = "m_iSendSize" Type = "UInt64"/>
+		</Protocol>
+	</GenFile>
+</ProtocolGen>
