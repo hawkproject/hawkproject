@@ -1,5 +1,0 @@
-通常先运行configure，在make即可
-
-curl: ./configure --without-ssl --without-libssh2 --without-cyassl --without-zlib --without-librtmp --without-libidn --disable-ldap --disable-ldaps
-
---enable-ares

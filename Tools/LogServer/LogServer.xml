@@ -1,4 +1,0 @@
-<SvrCfg Addr = "*:9595" Console = "true" CacheSize = "1048576" CacheTime = "60000">
-	<LogFile Valid = "false" File = "Logs/logfile.txt"/>
-	<LogDB Valid = "true" IP = "127.0.0.1" Port = "3306" User = "root" Pwd = "123456" DB = "hawk"/>	
-</SvrCfg>
